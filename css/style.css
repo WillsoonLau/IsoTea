@@ -44,7 +44,7 @@ hr{
     margin: 0;
 }
 /*header*/
-.header-container{
+.header-banner{
     display: flex;
     flex: 100%;
     flex-direction: column;
