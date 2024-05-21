@@ -1,0 +1,474 @@
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../assets/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../assets/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Satisfy-Regular';
+    src: url('../assets/fonts/GreatVibes-Regular/GreatVibes-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Awesome-Lathusca';
+    src: url('../assets/fonts/Awesome-Lathusca/Awesome-Lathusca.ttf');
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    font-family: 'Montserrat-Medium';
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+}
+.border-image {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.main-container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 2200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+hr{
+    margin: 0;
+}
+/*header*/
+.header-container{
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/coming\ soon.png);
+    background-size: cover;
+    background-position: center;
+}
+.header-information,
+.header-inner{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.header-logo{
+    display: flex;
+    flex: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.header-information{
+    gap: 20%;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.header-inner{
+    height: 80px;
+}
+/*header button*/
+.isotea-header-logo {
+    width: 65px;
+    height: 65px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    transition: transform 0.5s;
+}
+.isotea-header-logo:hover {
+    transform: scale(1.1);
+}
+.header-button {
+    display: flex;
+    flex: 50%;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 480px;
+    border-radius: 6px;
+}
+.nav-button{
+    transition: color 0.5s ease, border 0.5s ease;
+}
+.nav-button:hover{
+    color: #cd8c30;
+}
+.header-button button {
+    width: 120px;
+    height: 32px;
+    border: 2px solid #cd8c30;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    margin: -1px;
+}
+.header-button button:nth-child(1){
+    border-radius: 20px 0px 0px 20px;
+}
+.header-button button:nth-child(2),
+.header-button button:nth-child(3){
+    border-radius: 0px;
+}
+.header-button button:nth-child(4){
+    border-radius: 0px 20px 20px 0px;
+}
+.header-button button:focus {
+    outline: none;
+}
+/*home*/
+.home-container{
+    width: 100%;
+}
+.home-image{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+/*home text*/
+.home-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    /*object infront image*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    position:absolute;
+    color: white;
+}
+/*home menu*/
+.home-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 550px;
+    color: white;
+    /*object infront image*/
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    position:absolute;
+}
+.main-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.logo-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: 0px -8px;
+    margin-bottom: 20px;
+}
+#logo-text{
+    font-size: 70px;
+    font-family: 'Satisfy-Regular';
+    color: #c8a97e;
+}
+.menu-image-1,
+.menu-image-2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.menu-image-1{
+    background-size: 145px;
+    background-position: -30px;
+}
+.menu-image-2{
+    background-size: 140px;
+    background-position: -45px -25px;
+}
+#menu-text{
+    font-size: 12px;
+}
+#menu-text-head{
+    font-size: 18px;
+    color: #c8a97e;
+    font-family: 'Awesome-Lathusca';
+}
+/*about*/
+.title-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-about{
+    margin-top: 50px;
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+}
+.about-upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.about-image-1,
+.about-image-2{
+    width: 225px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+.about-image-2{
+margin-top: 30px;
+}
+#iso-tea-logo-text-1{
+    font-family: 'Awesome-Lathusca';
+    font-size: 30px;
+    color: #c8a97e;
+}
+#information-banner-text-1{
+    font-size: 70px;
+    font-family: 'Satisfy-Regular';
+    color: #c8a97e;
+}
+.about-why-text-holder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+#information-banner-text-child{
+    font-size: 45px;
+    font-family: 'Satisfy-Regular';
+    color: #c8a97e;
+    margin-right: 10px;
+}
+.about-text-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    max-width: 425px;
+}
+#about-text{
+    font-size: 15px;
+}
+.menu-text{
+    font-size: 14px;
+}
+/*.about-bottom{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.about-bottom-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}*/
+/*Our Tea*/
+.main-our-tea{
+    margin-top: 50px;
+}
+#information-banner-text-2{
+    font-size: 70px;
+    font-family: 'Satisfy-Regular';
+    color: #c8a97e;
+    margin-bottom: -55px;
+}
+.our-tea-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#iso-tea-logo-text-2{
+    font-family: 'Awesome-Lathusca';
+    font-size: 50px;
+}
+.menu-table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.menu-peppermint-black-tea,
+.menu-chamomile-black-tea{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+}
+.our-tea-image-container,
+.our-tea-text-container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    flex: 50%;
+}
+.our-tea-image-container{
+    justify-content: center;
+    align-items: center;
+}
+.our-tea-menu-header{
+    display: flex;
+    flex: 10%;
+}
+.our-tea-menu-text{
+    display: flex;
+    flex: 90%;
+    align-items: flex-start;
+}
+.our-tea-image{
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+#iso-tea-logo-text-3{
+    font-family: 'Awesome-Lathusca';
+    font-size: 25px;
+}
+/*Contact Us*/
+.main-contact-us{
+    margin-top: 50px;
+}
+.contact-us-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us-social-and-review{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+}
+.contact-us-social{
+    width: 250px;
+    background-color: #dbdfe4;
+    border-radius: 10px;
+    width: 290px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.contact-us-social-instagram{
+    display: flex;
+    flex-direction: column;
+}
+.instagram-row-1,
+.instagram-row-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.instagram-row-1,
+.instagram-row-2{
+    margin-bottom: 10px;
+}
+.instagram-row-3{
+    margin-bottom: 15px;
+}
+.instagram-row-2{
+    gap: 5%;
+}
+.instagram-row-4{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    text-align: justify;
+}
+.instagram-row-4 p{
+    flex: 1;
+    text-indent: 35px;
+}
+.contact-us-review{
+    width: 290px;
+    padding: 20px;
+}
+/*Footer*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #141313;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer-upper{
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer-child{
+    display: flex;
+    flex: 50%;
+    width: 250px;
+    margin-right: 15px;
+    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text{
+    margin-top: 20px;
+    font-size: 15px;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 300px;
+}
+.footer-banner-image{
+    margin-top: 20px;
+    width: 150px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+.footer-end{
+    margin-top: 50px;
+    font-size: 12px;
+}
+.iniwilson_{
+    text-decoration: underline;
+    transition: color 0.5s ease;
+}
+.iniwilson_:hover{
+    color: grey;
+}
