@@ -407,6 +407,7 @@ margin-top: 30px;
     justify-content: space-between;
     font-size: 15px;
     text-align: justify;
+    margin-bottom: 10px;
 }
 .instagram-row-4 p{
     flex: 1;
